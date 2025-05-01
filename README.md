@@ -3,12 +3,12 @@ A small Alpine based pgbouncer Docker image (see reference for original creator)
 
 ## To pull container
 
-```docker pull ghcr.io/apandey-oss/pgbouncer:master```
+```docker pull ghcr.io/apandey-oss/pgbouncer:latest```
 
 
 ## To run container 
 
-```docker run -v $(pwd):/m -p 6543:6543 ghcr.io/apandey-oss/pgbouncer:master /m/example.ini```
+```docker run -v $(pwd):/m -p 6543:6543 ghcr.io/apandey-oss/pgbouncer:latest /m/example.ini```
 
 ## To run container with TLS to PostgreSQL server
 
@@ -18,7 +18,7 @@ Expects `ca.crt`, `key.pem` and `cert.pem` to be present in current folder.
 
 See `tls.ini` for details
 
-```docker run -v $(pwd):/m -p 6543:6543 ghcr.io/apandey-oss/pgbouncer:master /m/tls.ini```
+```docker run -v $(pwd):/m -p 6543:6543 ghcr.io/apandey-oss/pgbouncer:latest /m/tls.ini```
 
 Expect output to be like:
 
